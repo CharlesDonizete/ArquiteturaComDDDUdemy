@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Api.Application/Api.Application.csproj" Id="aa7fefc4-9ccd-43de-89de-da9503dd59c9" />
+    <Project Path="src/Api.CrossCutting/Api.CrossCutting.csproj" Id="4fe0ab08-ee3e-4ea5-a752-c1e5a7da130b" />
+    <Project Path="src/Api.Data/Api.Data.csproj" Id="e1bbcd42-cfe2-469c-995e-f255882785af" />
+    <Project Path="src/API.Domain/Api.Domain.csproj" Id="4c6f6c17-69fd-4e3c-b6e4-3ab446c317fd" />
+    <Project Path="src/Api.Service/Api.Service.csproj" Id="6ee47f48-1ff3-46d7-a1a9-90a97b3babc0" />
+  </Folder>
+</Solution>
