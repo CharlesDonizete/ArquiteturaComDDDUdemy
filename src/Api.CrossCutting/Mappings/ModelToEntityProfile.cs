@@ -1,7 +1,6 @@
-﻿using AutoMapper;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Api.Domain.Entities;
+using Api.Domain.Models;
+using AutoMapper;
 
 namespace Api.CrossCutting.Mappings
 {
@@ -9,7 +8,8 @@ namespace Api.CrossCutting.Mappings
     {
         public ModelToEntityProfile()
         {
-            
+            CreateMap<UserModel, UserEntity>()
+                .ReverseMap();
         }
     }
 }
