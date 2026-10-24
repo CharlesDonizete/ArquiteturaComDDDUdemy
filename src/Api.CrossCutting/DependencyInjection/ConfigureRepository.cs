@@ -5,6 +5,7 @@ using Api.Domain.Interfaces;
 using Api.Domain.Repository;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using System;
 
 namespace Api.CrossCutting.DependencyInjection
 {
@@ -12,8 +13,9 @@ namespace Api.CrossCutting.DependencyInjection
     {
         public static void ConfigureDependenciesRepository(IServiceCollection serviceCollection)
         {
-            serviceCollection.AddDbContext<MyContext>(options =>
-             options.UseSqlServer("Data Source=DESKTOP-J5VHRAJ\\SQLEXPRESS01;Initial Catalog=dbApi;Integrated Security=False;User Id=admin;Password=123;Trusted_Connection=False;TrustServerCertificate=true"));
+            if(Environment.GetEnvironmentVariable("DATABASE").ToLower() == "SQLSERVER".ToLower())
+                serviceCollection.AddDbContext<MyContext>(options =>
+                    options.UseSqlServer(Environment.GetEnvironmentVariable("DB_CONNECTION")));
 
             serviceCollection.AddScoped(typeof(IRepository<>), typeof(BaseRepository<>));
             serviceCollection.AddScoped<IUserRepository, UserImplementarion>();            
