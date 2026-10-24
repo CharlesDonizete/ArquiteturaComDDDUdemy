@@ -6,4 +6,7 @@
     <Project Path="src/API.Domain/Api.Domain.csproj" Id="4c6f6c17-69fd-4e3c-b6e4-3ab446c317fd" />
     <Project Path="src/Api.Service/Api.Service.csproj" Id="6ee47f48-1ff3-46d7-a1a9-90a97b3babc0" />
   </Folder>
+  <Folder Name="/tests/">
+    <Project Path="test/Api.Data.Test/Api.Data.Test.csproj" Id="a53c262a-f4e2-454e-b799-d4ffdf0b6d45" />
+  </Folder>
 </Solution>
