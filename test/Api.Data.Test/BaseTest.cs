@@ -22,7 +22,7 @@ namespace Api.Data.Test
         {
             var serviceCollection = new ServiceCollection();
             serviceCollection.AddDbContext<MyContext>(options =>
-                options.UseSqlServer($"Data Source = DESKTOP - J5VHRAJ\\SQLEXPRESS01; Initial Catalog = {dataBaseName}; Integrated Security = False; User Id = admin; Password = 123; Trusted_Connection = False; TrustServerCertificate = true"),
+                options.UseSqlServer($"Data Source=DESKTOP-J5VHRAJ\\SQLEXPRESS01; Initial Catalog = {dataBaseName}; Integrated Security = False; User Id = admin; Password = 123; Trusted_Connection = False; TrustServerCertificate = true"),
             ServiceLifetime.Transient
             );
 
