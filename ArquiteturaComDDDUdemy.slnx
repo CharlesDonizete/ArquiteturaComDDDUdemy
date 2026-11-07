@@ -8,5 +8,6 @@
   </Folder>
   <Folder Name="/tests/">
     <Project Path="test/Api.Data.Test/Api.Data.Test.csproj" Id="a53c262a-f4e2-454e-b799-d4ffdf0b6d45" />
+    <Project Path="test/Api.Service.Test/Api.Service.Test.csproj" />
   </Folder>
 </Solution>
