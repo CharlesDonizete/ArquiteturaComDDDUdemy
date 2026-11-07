@@ -26,8 +26,8 @@ namespace Api.Data.Test
                 var _repositorio = new UserImplementarion(context);
                 var _entity = new UserEntity
                 {
-                    Name = "Teste",
-                    Email = "teste@mail.com"
+                    Name = Faker.Name.FullName(),
+                    Email = Faker.Internet.Email()
                 };
 
                 var _registroCriado = await _repositorio.InsertAsync(_entity);
